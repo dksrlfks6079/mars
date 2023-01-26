@@ -67,6 +67,10 @@
     opacity: 0.6;
 }
 
+.arrow img:hover {
+    opacity: 1;
+}
+
 /* slide_02 */
 
 .slide_02 .item {
@@ -93,10 +97,28 @@
     font-size: 14px;
 }
 
+.slide_02 .slick-dots {
+    top: -50px;
+    width: initial;
+    right: 0;
+}
+
+.slide_02 .slick-dots li button {
+    width: 14px;
+    height: 14px;
+    background-color: #000;
+    border-radius: 14px;
+    opacity: 0.2;
+}
+
+.slide_02 .slick-dots li.slick-active button {
+    opacity: 0.7;
+}
+
 /* section */
 
 .section {
-    width: 1200px;
+    max-width: 1200px;
     padding: 0 15px;
     margin: 0 auto;
     margin-top: 80px;
@@ -117,9 +139,7 @@
     color: var(--dark);
 }
 
-/* earth */
-
-.earth .title_box span {
+.section .title_box span {
     position: absolute;
     bottom: 0;
     right: 0;
@@ -127,9 +147,10 @@
     color: var(--mid);
 }
 
-.earth .title_box span i {
+.section .title_box span i {
     padding-left: 10px;
 }
+/* earth */
 
 .earth .cards {
     display: grid;
@@ -141,3 +162,86 @@
     width: 100%;
     display: block;
 }
+
+/* space */
+.space .cards {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 30px;
+    font-size: 24px;
+    text-align: center;
+    color: #fff;
+}
+
+.space .cards li {
+    position: relative;
+    cursor: pointer;
+    overflow: hidden;
+}
+
+.space .cards li img {
+    width: 100%;
+    display: block;
+}
+
+.space .cards li:nth-child(3) {
+    grid-column: 3/5;
+}
+
+.space .cards li:nth-child(4) {
+    grid-column: 1/3;
+}
+
+.space .cards li h5 {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    transition: top 0.3s;
+}
+
+.space .cards li i {
+    position: absolute;
+    font-size: 46px;
+    top: 110%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    transition: top 0.3s;
+}
+
+.space .cards li:hover h5 {
+    top: -20px;
+}
+
+.space .cards li:hover i {
+    top: 50%;
+}
+
+.space .cards li:hover img {
+    filter: brightness(50%);
+}
+
+/* map */
+
+.map {
+    width: 100% !important;
+}
+
+/* insrta */
+
+.insta .cards {
+    display: grid;
+    grid-template-columns: repeat(6, 1fr);
+    gap: 30px;
+}
+
+.insta .card img {
+    width: 100%;
+    display: block;
+}
+
+/* .insta .card li:hover img {
+    filter: brightness(50%);
+} */
+
+/* footer */
