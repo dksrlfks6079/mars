@@ -14,6 +14,7 @@
             href="//cdn.jsdelivr.net/npm/xeicon@2.3.3/xeicon.min.css"
         />
         <script src="https://code.jquery.com/jquery-3.6.3.slim.min.js"></script>
+        <script src="../js/filter.js"></script>
     </head>
     <body>
         <div class="container">
@@ -44,62 +45,62 @@
             <!-- gallery_header -->
             <div class="section gallery_header">
                 <ul class="category">
-                    <li><a href="#x">전체</a></li>
-                    <li><a href="#x">구름</a></li>
-                    <li><a href="#x">산</a></li>
-                    <li><a href="#x">바다</a></li>
-                    <li><a href="#x">바람</a></li>
+                    <li data-id="all"><a href="#x">전체</a></li>
+                    <li data-id="cloud"><a href="#x">구름</a></li>
+                    <li data-id="moutain"><a href="#x">산</a></li>
+                    <li data-id="sea"><a href="#x">바다</a></li>
+                    <li data-id="wind"><a href="#x">바람</a></li>
                 </ul>
                 <i class="xi-cog"></i>
             </div>
 
             <!-- gallery -->
             <ul class="section gallery">
-                <li>
+                <li data-item="moutain">
                     <img src="../images/gallery_01.jpg" alt="" />
                     <p>이제 추억과 하나에 봅니다</p>
                 </li>
-                <li>
+                <li data-item="sea">
                     <img src="../images/gallery_02.jpg" alt="" />
                     <p>까닭입니다</p>
                 </li>
-                <li>
+                <li data-item="cloud">
                     <img src="../images/gallery_03.jpg" alt="" />
                     <p>리고 있습니다</p>
                 </li>
-                <li>
+                <li data-item="cloud">
                     <img src="../images/gallery_04.jpg" alt="" />
                     <p>별을 책상을</p>
                 </li>
-                <li>
+                <li data-item="moutain">
                     <img src="../images/gallery_05.jpg" alt="" />
                     <p>별 멀리</p>
                 </li>
-                <li>
+                <li data-item="wind">
                     <img src="../images/gallery_06.jpg" alt="" />
                     <p>추억과 노새</p>
                 </li>
-                <li>
+                <li data-item="sea">
                     <img src="../images/gallery_07.jpg" alt="" />
                     <p>이름과 릴케 남은</p>
                 </li>
-                <li>
+                <li data-item="cloud">
                     <img src="../images/gallery_08.jpg" alt="" />
                     <p>지나가는 책상</p>
                 </li>
-                <li>
+                <li data-item="wind">
                     <img src="../images/gallery_09.jpg" alt="" />
                     <p>별 멀리</p>
                 </li>
-                <li>
+                <li data-item="wind">
                     <img src="../images/gallery_10.jpg" alt="" />
                     <p>이네들은 별을</p>
                 </li>
-                <li>
+                <li data-item="sea">
                     <img src="../images/gallery_11.jpg" alt="" />
                     <p>말 밤을 벌써</p>
                 </li>
-                <li>
+                <li data-item="moutain">
                     <img src="../images/gallery_12.jpg" alt="" />
                     <p>오는 이제</p>
                 </li>
