@@ -171,3 +171,12 @@ body {
 .section .title_box span i {
     padding-left: 10px;
 }
+
+.page {
+    margin-top: 140px;
+}
+
+.page h1 {
+    font-size: 40px;
+    text-align: center;
+}
